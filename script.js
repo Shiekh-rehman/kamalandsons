@@ -70,5 +70,11 @@ AOS.init();
 
 
 
-  // form ki coding
+  // swiper js code
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2.5,  // Adjust as per requirement
+    spaceBetween: 16,  // Space between cards
+    grabCursor: true,
+    freeMode: true,
+  });
   

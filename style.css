@@ -137,7 +137,7 @@ figcaption h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(7, 7, 7, 0.4);
     z-index: 1;
 }
 .carousel-wrapper img {
@@ -376,7 +376,17 @@ footer {
     }
 }
 
+.large-video{
+  width: 100%;
+}
 
+.large-video video{
+  width: 100%;
+  object-fit: cover;
+  padding: 12px 0;
+  /* height: 400px; */
+  /* object-position: top; */
+}
 
 .character {
   position: absolute;
@@ -608,6 +618,179 @@ footer {
   button:hover {
     background: #0056b3;
   }
+
+.video-cards-wrapper{
+  padding: 1rem;
+  margin-top: 16px;
+  height: auto;
+}
+
+  .col-md-3 video{
+    width: 100%;
+    height: 100%;
+    gap: 3px;
+    padding: 12px;
+    border-radius: 30px;
+    /* background: #000; */
+  }
+
+/* Section common style */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 36px;
+  color: #0077cc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* History Section */
+#history {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Founders Section */
+#founders .owners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.owner-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 25px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.owner-card:hover {
+  transform: translateY(-5px);
+}
+
+.owner-card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Reviews Section */
+#reviews .reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.review-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  max-width: 350px;
+  font-style: italic;
+}
+
+.review-name {
+  margin-top: 10px;
+  color: #0077cc;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+#brands-worked {
+  padding: 60px 20px;
+  background: #f9fbfe;
+  text-align: center;
+}
+
+#brands-worked h2 {
+  font-size: 32px;
+  color: #0077cc;
+  margin-bottom: 40px;
+}
+
+/* Slider Container */
+.brands-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Track for scrolling images */
+.brand-track {
+  display: flex;
+  gap: 40px;
+  animation: scrollBrands 20s linear infinite;
+  align-items: center;
+}
+
+/* Individual brand images */
+.brand-track img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.1s ease, transform 0.3s ease;
+}
+
+.brand-track img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Animation keyframes */
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brand-track img {
+    height: 40px;
+  }
+}
+
+
+
+/* Responsive Design */
+@media(max-width: 768px) {
+  .owner-card,
+  .review-card {
+    max-width: 90%;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+}
+
 
   /* Responsive styling */
   @media (max-width: 768px) {
